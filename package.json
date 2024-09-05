@@ -1,0 +1,52 @@
+{
+  "name": "rdf-vocabulary",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "git@github.com:CommunitySolidServer/rdf-vocabulary.git",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "config",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "npm run lint:eslint && npm run lint:markdown",
+    "lint:fix": "npm run lint:eslint:fix && npm run lint:markdown:fix",
+    "lint:eslint": "eslint . --cache --max-warnings 0",
+    "lint:eslint:fix": "npm run lint:eslint -- --fix",
+    "lint:markdown": "markdownlint-cli2",
+    "lint:markdown:fix": "npm run lint:markdown -- --fix",
+    "release": "commit-and-tag-version",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/jest": "^29.5.12",
+    "commit-and-tag-version": "^12.4.2",
+    "husky": "^4.3.8",
+    "jest": "^29.7.0",
+    "markdownlint-cli2": "^0.13.0",
+    "opinionated-eslint-config": "^0.1.0",
+    "simple-git": "^3.25.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && npm run lint && npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commit-and-tag-version": {
+    "scripts": {
+      "postchangelog": "markdownlint-cli2 --fix"
+    },
+    "writerOpts": {
+      "commitsSort": false
+    }
+  }
+}
