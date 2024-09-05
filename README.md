@@ -1,5 +1,7 @@
 # RDF Vocabulary
 
+[![npm version](https://badge.fury.io/js/rdf-vocabulary.svg)](https://www.npmjs.com/package/rdf-vocabulary)
+
 This library exposes utility functions and types to help working with RDF vocabulary terms.
 
 ```ts
