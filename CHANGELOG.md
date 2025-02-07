@@ -1,7 +1,19 @@
 <!-- markdownlint-disable MD013 -->
+<!-- markdownlint-disable MD013 -->
 # Changelog
 
 All notable changes to this project will be documented in this file.
+
+## [1.0.1](https://github.com/CommunitySolidServer/rdf-vocabulary/compare/v1.0.0...v1.0.1) (2025-02-07)
+
+### Chores
+
+* Update @rdfs/types dependency to * ([3465e78](https://github.com/CommunitySolidServer/rdf-vocabulary/commit/3465e78654664f6289dfe23ef51e13f9f0b35983))
+* **deps:** Bump actions/checkout from 4.1.7 to 4.2.2 ([fbc0d7a](https://github.com/CommunitySolidServer/rdf-vocabulary/commit/fbc0d7a4436036f4413b6cc11b500e6ef5011886))
+
+### Documentation
+
+* Add npm badge ([5575b3d](https://github.com/CommunitySolidServer/rdf-vocabulary/commit/5575b3d51a4b65e8bd74f6b2476054cc73316653))
 
 ## 1.0.0 (2024-09-05)
 
