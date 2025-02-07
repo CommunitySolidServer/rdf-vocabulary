@@ -21,7 +21,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@rdfjs/types": "^1.1.0"
+    "@rdfjs/types": "*"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
