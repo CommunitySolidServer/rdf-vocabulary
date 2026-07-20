@@ -28,7 +28,7 @@ jobs:
           - ubuntu-latest
           - windows-latest
         node-version:
-          - '18.0'
+          - '18.14'
           - 18.x
           - '20.0'
           - 20.x
